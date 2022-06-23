@@ -96,7 +96,7 @@ class Queue():
     def __init__(self):
         # Store the length so that we can access it in O(1) time
         self.length = 0
-        # Dynamic array that holds the data
+        # Linked List that holds the data
         self.queue = LinkedList()
 
     def enqueue(self, data):
