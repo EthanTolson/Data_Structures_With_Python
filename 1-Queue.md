@@ -2,13 +2,13 @@
 ## Overview
 Have you ever stood in line for concert tickets? You start at the back and slowly make your way to the front as people get their tickets.
 
-![Concert Queue](concertqueuefinal.jpg)
+![Concert Queue](resources/concertqueuefinal.jpg)
 
 If you have then you already know what a **queue** is.
 ### **First In First Out**
 Just like a line for concert tickets, queues use a **first in first out** system where the first thing to be placed in a queue is the first thing to be removed.
 
-![Queue](queuefinal.png)
+![Queue](resources/queuefinal.png)
 
 In our concert example the first person in line is sold a ticket before anyone else.
 
@@ -19,7 +19,7 @@ Queues are a very common data structures in computer science. One place you have
 
 When you sign into a website it puts you into a queue to access their services. If too many people are trying to log in at once you might see a screen like this.
 
-![Network Queue](networkqueuefinal.png)
+![Network Queue](resources/networkqueuefinal.png)
 
 It even tells you you are in a queue!
 
@@ -50,7 +50,7 @@ If you do not understand dynamic arrays click the link below.
 
 Here is an example:
 ```python
-class Queue()
+class Queue():
     def __init__(self):
         # Store the length so that we can access it in O(1) time
         self.length = 0
@@ -72,6 +72,10 @@ class Queue()
             # The first item in the queue gets returned
             return self.queue.pop(0)
 
+    def size(self):
+        # Returns the size of the queue
+        return self.length
+
     def empty(self):
         # Returns true if the queue is empty
         return self.length <= 0
@@ -89,7 +93,7 @@ In this example our **Queue** has a length attribute, a dequeue function, and an
 Learn about **Linked Lists** here: [Linked Lists](2-LinkedList.md#queues-using-linked-lists)
 
 ```python
-class Queue()
+class Queue():
     def __init__(self):
         # Store the length so that we can access it in O(1) time
         self.length = 0
@@ -112,6 +116,14 @@ class Queue()
             data = self.queue.head.data
             self.queue.removehead()
             return data
+
+    def size(self):
+        # Returns the size of the queue
+        return self.length
+
+    def empty(self):
+        # Returns true if the queue is empty
+        return self.length <= 0
 ```
 
 #### **Performance With a Linked List**
@@ -122,8 +134,23 @@ class Queue()
 * Size - O(1)
     * Size is stored as an attribute of the object so retrieving it takes O(1) time
 
-## Common Mistakes
-
 ## Example of Using a Queue in Python
+For this example and for the try it yourself problem we will use a dynamic array for our queue. These problems are meant to help you understand how to build and use a queue.
+
+In this example we will build a queue that loops. When something is dequeued it is then placed at the back of the queue to be used again.
+
+We start with the basic queue that was create [above](#using-dynamic-arrays).
+
+[Example Problem Circular Queue](examplequeue.py)
 
 ## Try It Yourself
+
+Try using a queue. 
+
+For this problem you will be rewriting the enqueue function so there are no duplicates in the queue. The tests will be written for you. You only have to rewrite the enqueue function.
+
+Work on it for 10-20 minutes before looking at the solution.
+
+[Try It Yourself Removing Duplicates](tryqueues.py)
+
+[Try It Yourself - Possible Answer](solutions/tryqueuessolution.py)
