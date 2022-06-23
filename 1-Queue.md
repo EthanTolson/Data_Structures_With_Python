@@ -8,11 +8,9 @@ If you have then you already know what a **queue** is.
 ### **First In First Out**
 Just like a line for concert tickets, queues use a **first in first out** system where the first thing to be placed in a queue is the first thing to be removed.
 
-![Queue](resources/queuefinal.png)
-
 In our concert example the first person in line is sold a ticket before anyone else.
 
-### Common Uses of Queues
+### **Common Uses of Queues**
 Queues are a very common data structures in computer science. One place you have experienced them is when you use the internet.
 
 **Networks** use queues to make sure that people can retrieve data in the order that they requested it.
@@ -27,8 +25,9 @@ Making a **phone call** also makes use of queues.
 
 
 ### **Common Operations**
+![Queue](resources/queuefinal.png)
 * **Enqueue**
-    * Places a new value at the end of the queue. Values cannot be added to any place but the end.
+    * Places a new value at the end of the queue. Values cannot be added to any place but the end. 
 * **Dequeue**
     * Retrieves the value at the front of the queue. Values cannot be retrieved from any place but the beginning.
 * **Size**
@@ -141,7 +140,7 @@ In this example we will build a queue that loops. When something is dequeued it 
 
 We start with the basic queue that was create [above](#using-dynamic-arrays).
 
-[Example Problem Circular Queue](examplequeue.py)
+[Example Problem Circular Queue](code/examplequeue.py)
 
 ## Try It Yourself
 
@@ -151,6 +150,6 @@ For this problem you will be rewriting the enqueue function so there are no dupl
 
 Work on it for 10-20 minutes before looking at the solution.
 
-[Try It Yourself Removing Duplicates](tryqueues.py)
+[Try It Yourself Removing Duplicates](code/tryqueues.py)
 
 [Try It Yourself - Possible Answer](solutions/tryqueuessolution.py)
