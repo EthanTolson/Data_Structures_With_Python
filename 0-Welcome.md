@@ -11,3 +11,5 @@ I recommend starting with queues and working your way down.
 If you have any questions or if I made a mistake let me know.
 * Email: tol18009@byui.edu
 * Ethan Tolson
+## Sources Cited
+* [Sources](4-ResourcesUsed.md)
