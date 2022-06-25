@@ -22,6 +22,7 @@ In this image we see that most memory spaces are already used (filled with black
 
 
 In this image we see a linked list with three nodes being stored in memory. Black dots represent memeory being used. Red dots represent a node in our linked list.
+
 ![Linked List in Memory](resources/computermemorylinkedlist.png)
 
 Now we can store our data without needing a lot of extra memory!
