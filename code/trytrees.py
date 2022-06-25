@@ -3,6 +3,16 @@ class BinaryTree():
         self.root = None
         self.length = 0
 
+    def findoccurances(self, data, node = None):
+        """
+        Your code Here
+        You will use recursion to solve this problem
+        Make sure all of your base cases are covered
+        """
+        
+        """End of Code"""
+        pass
+
     def addtotree(self, data, node = None):
         """
         This function inserts a node into our Binary search tree
@@ -127,15 +137,25 @@ class BinaryTree():
 Tests
 
 Should Print
-"True
-False"
+"6
+2
+0"
 """
 
 tree = BinaryTree()
 tree.addtotree(3)
 tree.addtotree(4)
 tree.addtotree(2)
+tree.addtotree(2)
 tree.addtotree(1)
+tree.addtotree(2)
+tree.addtotree(3)
+tree.addtotree(4)
+tree.addtotree(2)
+tree.addtotree(2)
+tree.addtotree(1)
+tree.addtotree(2)
 
-print(tree.contains(2))
-print(tree.contains(9))
+print(tree.findoccurances(2))
+print(tree.findoccurances(4))
+print(tree.findoccurances(9))

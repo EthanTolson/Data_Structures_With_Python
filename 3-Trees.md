@@ -89,7 +89,7 @@ def recursiveadding(value):
     return value + recursiveadding(value - 1)
 ```
 
-Trees use recursion for many of their common operations. See the example [below](#code) for some examples of recursion with trees. For the example problem we will walk you through creating a function that 
+Trees use recursion for many of their common operations. See the example [below](#code) for some examples of recursion with trees. For the example problem we will walk you through creating a function that will check if a value is in a tree.
 ## Trees with Python
 Python has no builtin tree data structure so we will build our own.
 
@@ -179,6 +179,7 @@ class BinaryTree():
                 return 1 + self.getHeight(node.left)
 
     class Node():
+        # Simple Node Class
         def __init__(self, data):
             self.data = data
             self.left = None
@@ -188,5 +189,20 @@ class BinaryTree():
 ## Common Mistakes
 The most common mistake when using trees is problems with recursion. Forgetting base cases or not recursively calling a function when you need to will be the major problems you need to overcome.
 ## Example Code
+In this example we will walk through the contains function for the tree we created above. 
+
+We start with the tree created [above](#code). 
+
+[Example Problem - Contains](code/exampletrees.py)
 
 ## Try It Yourself
+
+Try using a tree.
+
+For this problem you will be writing a function that will tell a user how many occurances af a value there are in a tree.
+
+Work on this problem for 20-40 Minutes before checking the solution.
+
+[Try It Yourself Number of Occurances](code/trytrees.py)
+
+[Try It Yourself - Possible Answer](solutions/trytreessolution.py)
