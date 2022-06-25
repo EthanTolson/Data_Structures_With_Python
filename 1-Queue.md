@@ -89,7 +89,7 @@ In this example our **Queue** has a length attribute, a dequeue function, and an
     * Size is stored as an attribute of the object so retrieving it takes O(1) time
 
 ### Using A Linked List
-Learn about **Linked Lists** here: [Linked Lists](2-LinkedList.md#queues-using-linked-lists)
+Learn about **Linked Lists** here: [Linked Lists](2-LinkedList.md#linked-lists)
 
 ```python
 class Queue():
@@ -127,9 +127,9 @@ class Queue():
 
 #### **Performance With a Linked List**
 * Enqueue - O(1)
-    * Adding to the end of a linked list takes O(1) time. [Linked List Performance](2-LinkedList.md#performance)
+    * Adding to the end of a linked list takes O(1) time. [Linked List Performance](2-LinkedList.md#common-operations-and-performance)
 * Dequeue - O(1)
-    * removing from the front of a linked list takes O(1) time. [Linked List Performance](2-LinkedList.md#performance)
+    * removing from the front of a linked list takes O(1) time. [Linked List Performance](2-LinkedList.md#common-operations-and-performance)
 * Size - O(1)
     * Size is stored as an attribute of the object so retrieving it takes O(1) time
 
