@@ -47,7 +47,7 @@ Keeping track of the tail and the previous nodes solves two of the issues we add
 
 Firstly by keeping track of the tail (last node) adding to the end of the list goes from taking O(n) time to O(1) time. 
 
-Secondly if given a node we can now traverse foward and backwards be cause each node contains the location of the previous and next.
+Secondly if given a node we can now traverse foward and backwards because each node contains the location of the previous and next.
 
 ## Common Operations and Performance
 For performance we will focus on doubly linked lists.
