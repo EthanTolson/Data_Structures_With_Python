@@ -141,6 +141,28 @@ In this example we will build a queue that loops. When something is dequeued it 
 We start with the basic queue that was create [above](#using-dynamic-arrays).
 
 [Example Problem Circular Queue](code/examplequeue.py)
+```python
+def dequeue(self):
+        # if there is nothing in the queue then we cant return 
+        # anything
+        if self.length > 0:
+            # Adjust the length
+            self.length -= 1
+            """
+            When we dequeue instead of removing from the list 
+            we want to shift the first element to the end
+            thats whats makes it a circular queue
+            """
+            data = self.queue.pop(0)
+            # Use the enqueue function to add the value 
+            # back to the end of the queue
+            self.enqueue(data)
+            """
+            End of Example
+            """
+            # The first item in the queue gets returned
+            return data
+```
 
 ## Try It Yourself
 
@@ -151,5 +173,24 @@ For this problem you will be rewriting the enqueue function so there are no dupl
 Work on it for 10-20 minutes before looking at the solution.
 
 [Try It Yourself Removing Duplicates](code/tryqueues.py)
+```python
+class UniqueQueue():
+    def __init__(self):
+        # Store the length so that we can access it in O(1) time
+        self.length = 0
+        # Dynamic array that holds the data
+        self.queue = []
+
+    def enqueue(self, data):
+        """
+        Code Goes Here
+        Dont forget about the length
+        """
+        
+        """
+        End of problem
+        """
+        pass
+```
 
 [Try It Yourself - Possible Answer](solutions/tryqueuessolution.py)
