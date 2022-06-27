@@ -159,7 +159,7 @@ Work on this problem for 10-20 minutes before looking at the solution.
 
 We will start with the code [above](#linked-lists-with-python).
 
-[Try It Yourself Remove Head and Tail](code/trylinkedlists.py)
+[Try It Yourself Combine Linked Lists](code/trylinkedlists.py)
 
 ```python
 def combineLinkedLists(l1, l2):
