@@ -196,7 +196,7 @@ The function will return a string. The instructions will be passed as a string w
 
 We start with the tree created [above](#code). 
 
-[Example Problem - Contains](code/exampletrees.py)
+[Example Problem - Traverse Instructions](code/exampletrees.py)
 
 ```python
 def traverseTree(self, traverseInstruction):
