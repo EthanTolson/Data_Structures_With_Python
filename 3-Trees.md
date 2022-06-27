@@ -38,9 +38,9 @@ To calculate the height of a subtree you start at the parent node and follow the
 
 The tree displayed below is balanced.
 
-![Binary Tree](resources/binarytreefinal.png)
+![Binary Tree](resources/balancedtree.png)
 
-The height of the right subtree is the same as the height of the left subtree.
+The height of the subtrees are the same.
 
 The tree below is unbalanced.
 

@@ -11,4 +11,6 @@
 * Doubly linked list - [Original Link](https://commons.wikimedia.org/wiki/File:Doubly_linked_list.png) - Edited
     * [Used Here](2-LinkedList.md#doubly-linked-lists)
 * Search tree - [Original Link](https://openclipart.org/detail/324463/search-tree) - Edited
-    * [Used Here]()
+    * [Used Here](3-Trees.md#overview)
+* Balanced tree - [Original Link](https://commons.wikimedia.org/wiki/File:Balanced_tree.png) - Unedited
+    * [Used Here](3-Trees.md#balancing-trees)
