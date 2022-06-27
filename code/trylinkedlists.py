@@ -47,28 +47,6 @@ class DoublyLinkedList():
         # add to the length
         self.length += 1
 
-    def removehead(self):
-        """
-        Your code here
-        dont forget about length
-        """
-
-        """
-        End of code
-        """
-        pass
-
-    def removetail(self):
-        """
-        Your code here
-        Dont forget about length
-        """
-        
-        """
-        End of code
-        """
-        pass
-
     def __str__(self):
         """Function returns our list as a string"""
         node = self.head
@@ -89,32 +67,38 @@ class DoublyLinkedList():
             self.previous = None
             self.data = data
 
+def combineLinkedLists(l1, l2):
+    """Your code here"""
+
+    """End of problem"""
+    pass
+
 """
 Test
 
-Should Print "[2, 3, 2]"
-and []
+Should Print "[1,2,3,2,1]
+[a]
+[1,2,3,2,1,a]
 """
 # create the linked list
-linked_list = DoublyLinkedList()
+linked_list1 = DoublyLinkedList()
 # insert our data into the linked list
-linked_list.inserthead(3)
-linked_list.inserthead(2)
-linked_list.inserthead(1)
-linked_list.inserttail(2)
-linked_list.inserttail(1)
+linked_list1.inserthead(3)
+linked_list1.inserthead(2)
+linked_list1.inserthead(1)
+linked_list1.inserttail(2)
+linked_list1.inserttail(1)
 
-# Test out your answer
-linked_list.removehead()
-linked_list.removetail()
 
-print(linked_list)
+print(linked_list1)
 
 # create new linked list with only one node
-linked_list = DoublyLinkedList()
+linked_list2 = DoublyLinkedList()
 
-linked_list.inserthead(1)
-linked_list.removetail()
-linked_list.removehead()
+linked_list2.inserthead("a")
 
-print(linked_list)
+print(linked_list2)
+
+linked_list3 = combineLinkedLists(linked_list1, linked_list2)
+
+print(linked_list3)

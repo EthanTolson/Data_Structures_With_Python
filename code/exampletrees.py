@@ -82,7 +82,6 @@ class BinaryTree():
             # Recursive Call
             else:
                 return self.contains(data, node.left)
-        """End of Example"""
 
     def getHeight(self, node = None):
         """
@@ -116,6 +115,36 @@ class BinaryTree():
             else:
                 return 1 + self.getHeight(node.left)
 
+    def traverseTree(self, traverseInstruction):
+        """
+        This function will traverse the tree according to the instructions provided in this format
+        "1010,001,101,101," Where the 1s represent moves to the right and 0s represent moves to the left
+        commas represent which data to return
+
+        It will return a string with all the data requested.
+
+        We will assume that the instructions will always be valid.
+        """
+        # start at the root
+        node = self.root
+        # create string to hold values
+        results = ""
+        # loop through the instructions
+        for direction in traverseInstruction:
+            #if the direction is a comma then add the data at the 
+            # current node to the results and set the node to the root
+            if direction == ",":
+                results = results + node.data
+                node = self.root
+            # if direction is 1 then go to the right
+            elif direction == "1":
+                node = node.right
+            # if direction is 0 then go to the left
+            else:
+                node = node.left
+        return results
+        """End of Example"""
+
     class Node():
         # Simple Node Class
         def __init__(self, data):
@@ -127,15 +156,16 @@ class BinaryTree():
 Tests
 
 Should Print
-"True
-False"
+"Faults"
 """
 
 tree = BinaryTree()
-tree.addtotree(3)
-tree.addtotree(4)
-tree.addtotree(2)
-tree.addtotree(1)
+tree.addtotree("m")
+tree.addtotree("f")
+tree.addtotree("a")
+tree.addtotree("l")
+tree.addtotree("t")
+tree.addtotree("u")
+tree.addtotree("s")
 
-print(tree.contains(2))
-print(tree.contains(9))
+print(tree.traverseTree("0,00,11,01,1,10,"))

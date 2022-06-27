@@ -47,6 +47,13 @@ class DoublyLinkedList():
         # add to the length
         self.length += 1
 
+    def convertDynamicArray(self, array):
+        """
+        This function takes a dynamic array and converts it to a linked list
+        """
+        for item in array:
+            self.inserttail(item)
+
     def __str__(self):
         """Function returns our list as a string"""
         node = self.head
@@ -74,10 +81,6 @@ Should Print "[1, 2, 3, 2, 1]
 # create the linked list
 linked_list = DoublyLinkedList()
 # insert our data into the linked list
-linked_list.inserthead(3)
-linked_list.inserthead(2)
-linked_list.inserthead(1)
-linked_list.inserttail(2)
-linked_list.inserttail(1)
-
+array = [1,2,3,2,1]
+linked_list.convertDynamicArray(array)
 print(linked_list)

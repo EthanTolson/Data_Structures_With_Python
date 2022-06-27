@@ -3,13 +3,13 @@ class BinaryTree():
         self.root = None
         self.length = 0
 
-    def findoccurances(self, data, node = None):
+    def findoccurences(self, data, node = None):
         """Sample Solution"""
         if node == None:
             if self.root == None:
                 return 0
             else:
-                return self.findoccurances(data, self.root)
+                return self.findoccurences(data, self.root)
         elif node.left == None and node.right == None and node.data == data:
             return 1
         elif node.left == None and node.right == None and node.data != data:
@@ -22,11 +22,11 @@ class BinaryTree():
             return 0
 
         elif node.data == data:
-            return 1 + self.findoccurances(data, node.right)
+            return 1 + self.findoccurences(data, node.right)
         elif node.data < data:
-            return 0 + self.findoccurances(data, node.right)
+            return 0 + self.findoccurences(data, node.right)
         elif node.data > data:
-            return 0 + self.findoccurances(data, node.left)
+            return 0 + self.findoccurences(data, node.left)
         """End of Code"""
         pass
 
@@ -173,6 +173,6 @@ tree.addtotree(2)
 tree.addtotree(1)
 tree.addtotree(2)
 
-print(tree.findoccurances(2))
-print(tree.findoccurances(4))
-print(tree.findoccurances(9))
+print(tree.findoccurences(2))
+print(tree.findoccurences(4))
+print(tree.findoccurences(9))

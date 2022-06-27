@@ -3,7 +3,7 @@ class BinaryTree():
         self.root = None
         self.length = 0
 
-    def findoccurances(self, data, node = None):
+    def findoccurences(self, data, node = None):
         """
         Your code Here
         You will use recursion to solve this problem
@@ -156,6 +156,6 @@ tree.addtotree(2)
 tree.addtotree(1)
 tree.addtotree(2)
 
-print(tree.findoccurances(2))
-print(tree.findoccurances(4))
-print(tree.findoccurances(9))
+print(tree.findoccurences(2))
+print(tree.findoccurences(4))
+print(tree.findoccurences(9))
