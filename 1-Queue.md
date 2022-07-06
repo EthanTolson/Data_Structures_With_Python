@@ -138,7 +138,7 @@ For this example and for the try it yourself problem we will use a dynamic array
 
 In this example we will build a queue that loops. When something is dequeued it is then placed at the back of the queue to be used again.
 
-We start with the basic queue that was create [above](#using-dynamic-arrays).
+We start with the basic queue that was created [above](#using-dynamic-arrays).
 
 [Example Problem Circular Queue](code/examplequeue.py)
 ```python
