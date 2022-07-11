@@ -69,7 +69,7 @@ Doubly Linked lists have excellent performance at the start and end. This makes 
 ### Queues Using Linked Lists
 [Code for Linked List Queue](1-Queue.md#using-a-linked-list)
 
-Python has a built in library called deque which is a linked list (deque stands for double ended queue). read more about it [here](https://www.geeksforgeeks.org/deque-in-python/).
+Python has a built in library called deque which is a linked list (deque stands for double ended queue). Read more about it [here](https://www.geeksforgeeks.org/deque-in-python/).
 
 ## Linked Lists with Python
 Below is the basic structure of a linked list written using two classes the node and the linked list. The node is what makes it a doubly linked list. It has both a previous and next attribute.
