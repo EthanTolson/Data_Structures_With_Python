@@ -168,6 +168,8 @@ def dequeue(self):
 
 Try using a queue. 
 
+Imagine that you are creating a login queue for an online service. You want to make sure that people cannot take up multiple spots in the queue. 
+
 For this problem you will be rewriting the enqueue function so there are no duplicates in the queue. The tests will be written for you. You only have to rewrite the enqueue function.
 
 Work on it for 10-20 minutes before looking at the solution.

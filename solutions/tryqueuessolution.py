@@ -49,13 +49,12 @@ Expected Output: True
 uniqqueue = UniqueQueue()
 
 # Try to add mulitple of certain values
-uniqqueue.enqueue(1)
-uniqqueue.enqueue(2)
-uniqqueue.enqueue(1)
-uniqqueue.enqueue(3)
-uniqqueue.enqueue(1)
-uniqqueue.enqueue(4)
-uniqqueue.enqueue(5)
-uniqqueue.enqueue(5)
-
-print("[1, 2, 3, 4, 5]" == str(uniqqueue))
+uniqqueue.enqueue("Bob")
+uniqqueue.enqueue("Sue")
+uniqqueue.enqueue("Tim")
+uniqqueue.enqueue("Tim")
+uniqqueue.enqueue("Stanley")
+uniqqueue.enqueue("Bob")
+uniqqueue.enqueue("Denise")
+uniqqueue.enqueue("Sue")
+print("['Bob', 'Sue', 'Tim', 'Stanley', 'Denise']" == str(uniqqueue))
